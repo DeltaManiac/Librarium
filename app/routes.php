@@ -17,9 +17,13 @@ Route::get('/', function()
 	return View::make('pages.home');
 });
 
+Route::get('/about',function()
+{
+    return View::make('pages.about', ['squirrel' => 'Samantha', 'something' => 1]);
+});;
+
 Route::get('/cat',function(){
-    $results = DB::select('select * from test');
-    return View::make('cat', ['squirrel' => 'Samantha', 'something' => 1,'a' => $results]);
+    return View::make('cat', ['squirrel' => 'Samantha', 'something' => 1]);
 });
 
 Route::get('/header',function(){
