@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'mo-2ac8763d4.mo.sap.corp',
-			'database'  => 'LIBRARY',
+			'host'      => '127.0.0.1',
+			'database'  => 'test',
 			'username'  => 'root',
-			'password'  => 'P@SSWORD1',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

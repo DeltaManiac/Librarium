@@ -20,4 +20,15 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
+	public function getDownload($id){
+		//PDF file is stored under project/public/download/info.pdf
+		dd($id);
+		$file= public_path(). "/download/";
+		$headers = array(
+			'Content-Type: application/pdf',
+		);
+		return Response::download($file, 'info.pdf', $headers);
+	}
+
+
 }

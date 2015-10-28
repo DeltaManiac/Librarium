@@ -5,7 +5,14 @@
             <li><a href="/">Home</a></li>
             <li><a href="{{ URL::to('about') }}">About</a></li>
             <li><a href="/projects">Projects</a></li>
+            <li><a href="/header">Header</a></li>
+            <li><a href="/footer">Footer</a></li>
             <li><a href="/contact">Contact</a></li>
+            @if(Auth::user())
+                <li><a href="{{ URL::to('logout') }}">Logout</a></li>
+            @else
+                <li><a href="{{ URL::to('about') }}">Login</a></li>
+            @endif
         </ul>
     </div>
 </div>

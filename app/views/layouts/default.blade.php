@@ -15,7 +15,7 @@
             @yield('content')
 
     </div>
-    <img src="img/9.jpg"/>
+    {{--<img src="img/9.jpg"/>--}}
 
     <footer class="row">
         @include('includes.footer')
