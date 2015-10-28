@@ -13,5 +13,15 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+
+	return View::make('pages.home');
+});
+
+Route::get('/cat',function(){
+    $results = DB::select('select * from test');
+    return View::make('cat', ['squirrel' => 'Samantha', 'something' => 1,'a' => $results]);
+});
+
+Route::get('/header',function(){
+    return View::make('header', ['squirrel' => 'Samantha', 'something' => 1]);
 });
