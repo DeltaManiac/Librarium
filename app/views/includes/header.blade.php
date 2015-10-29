@@ -1,14 +1,18 @@
-<div class="navbar">
-    <div class="navbar-inner">
-        <a id="logo" href="/">Single Malt</a>
-        <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            @if(Auth::user())
-                <li><a href="{{ URL::to('logout') }}">Logout</a></li>
-            @else
-                <li><a href="{{ URL::to('login') }}">Login</a></li>
-            @endif
-        </ul>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Librarium</a>
     </div>
-</div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        {{--<li class="active"><a href="#"></a></li>--}}
+         @if(Auth::user())
+            <li><a href="{{ URL::to('logout') }}"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+         @else
+            <li><a href="{{ URL::to('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+         @endif
+      </ul>
+    </div>
+  </div>
+</nav>
