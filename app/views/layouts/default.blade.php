@@ -6,7 +6,7 @@
 <body>
 <div class="container">
 
-    <header class="row">
+    <header>
         @include('includes.header')
     </header>
 
@@ -17,7 +17,7 @@
     </div>
     {{--<img src="img/9.jpg"/>--}}
 
-    <footer class="row">
+    <footer>
         @include('includes.footer')
     </footer>
 
