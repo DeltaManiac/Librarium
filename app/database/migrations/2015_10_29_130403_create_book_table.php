@@ -18,7 +18,7 @@ class CreateBookTable extends Migration {
 				$table->increments("id");
 				$table->string("bookName");
 				$table->string("author");
-				$table->string("image");
+				$table->string("image")->nullable();
 				$table->string("fileName");
 				$table->timestamps();
 			});
