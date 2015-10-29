@@ -52,7 +52,7 @@ class BookController extends BaseController {
      */
     public function store()
     {
-        //dd(Input::file('file'));
+       // dd(Input::file('file'));
         $book = new Book();
         $book->bookName = Input::get("BookName");
         $book->fileName = Input::file('file')->getClientOriginalName();

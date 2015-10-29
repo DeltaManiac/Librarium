@@ -3,7 +3,7 @@
     <h2>Hello {{ Auth::user()->username }}</h2>
     @foreach($books as $book)
         @if($book->image)
-            <img src={{"download/".$book->image}}>
+            <img src="/download/{{ $book->image }}">
         @else
             <img src="img/def.jpg"/>
             @endif

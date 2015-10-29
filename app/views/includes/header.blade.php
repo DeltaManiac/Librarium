@@ -9,9 +9,9 @@
             <li><a href="/footer">Footer</a></li>
             <li><a href="/contact">Contact</a></li>
             @if(Auth::user())
-                <li><a href="/logout">Logout</a></li>
+                <li><a href="{{ URL::to('logout') }}">Logout</a></li>
             @else
-                <li><a href="/login">Login</a></li>
+                <li><a href="{{ URL::to('login') }}">Login</a></li>
             @endif
         </ul>
     </div>
