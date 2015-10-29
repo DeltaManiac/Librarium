@@ -1,7 +1,6 @@
 @extends('layouts.default')
 @section('content')
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+<style>
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
             width: 70%;
@@ -40,8 +39,8 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="jumbotron">
-        <h1>Welcome to Librarium</h1>
-    </div>
+    {{--<div class="jumbotron">--}}
+        {{--<h1>Welcome to Librarium</h1>--}}
+    {{--</div>--}}
    </div>
 @stop

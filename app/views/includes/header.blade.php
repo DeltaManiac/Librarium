@@ -1,7 +1,7 @@
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
+<nav class="  navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header " >
       <a class="navbar-brand" href="/">Librarium</a>
     </div>
     <div>

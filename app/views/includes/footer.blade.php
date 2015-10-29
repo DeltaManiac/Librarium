@@ -1,3 +1,6 @@
-<footer class="text-center" style="position : absolute;bottom : 0;padding-left: 28%;">
-    <p>© Copyright 2015</p>
-</footer>
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    © Copyright 2015
+  </div>
+ </nav>
