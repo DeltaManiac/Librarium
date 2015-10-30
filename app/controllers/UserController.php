@@ -31,7 +31,9 @@ class UserController
 
     public function search(){
         $name = Input::get('srch-term');
-        $book = DB::table('book')->where('bookName', 'like', $name)->get();
+        $book = DB::table('book')->where('bookName', 'like', "%".$name."%")
+            ->orWhere('author','like',"%".$name."%")
+            ->get();
         return View::make("user.searchResult",["books"=>$book]);
     }
 

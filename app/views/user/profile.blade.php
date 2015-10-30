@@ -7,11 +7,14 @@
     p {
         color:black;
     }
+    .tiles{
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 </style>
-    <div class="container-fluid text-center bg-grey">
-        <h2>Books</h2><br>
-        <h2>Hello {{ Auth::user()->username }}</h2>
-        <div class="row text-center">
+    <div class="container-fluid text-center bg-1">
+        <div class="row text-center tiles">
             @foreach($books as $book)
                 <div class="col-sm-4">
                     <div class="thumbnail">
