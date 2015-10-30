@@ -1,0 +1,119 @@
+/*html,*/
+/*body {*/
+    /*color: #9d9d9d;*/
+    /*height: 100%;*/
+    /*background: url("../img/back.jpg");*/
+/*}*/
+
+/*body {*/
+    /*padding-bottom: 70px;*/
+/*}*/
+
+/*.peopleCarouselImg img {*/
+    /*width: auto;*/
+    /*height: 225px;*/
+    /*max-height: 225px;*/
+/*}*/
+
+.slider-size {
+    background-size: 400px;
+    height: 400px; /* This is your slider height */
+}
+
+.c1{
+    background:url('../img/c1.jpg') center center;
+    background-size: 100% !important;
+}
+
+.c2{
+    background:url('../img/c2.jpg') center center;
+}
+.c3{
+    background:url('../img/c3.jpg') center center;
+}
+
+.c4{
+    background:url('../img/c4.jpg') center center;
+}
+
+.carousel {
+    width:100%;
+    margin:0 auto; /* center your carousel if other than 100% */
+    margin-top: 50px;
+}
+/*=================================TEST===========================================*/
+.bg-1 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+}
+
+.bg-2 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+.bg-3 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+body {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+p {font-size: 16px;}
+
+.margin {margin-bottom: 45px;}
+
+.login{
+    width : 50%;
+
+}
+
+html{
+    background-color: #1abc9c; /* Dark Blue */
+
+}
+
+.title{
+    font-size: 170px;
+    text-shadow: 0px 2px 3px #555;
+
+}
+
+.loginText{
+
+    font-size: 100px;
+}
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 1px dashed deeppink;
+}
