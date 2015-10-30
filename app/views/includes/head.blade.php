@@ -6,8 +6,8 @@
 <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/jquery.min.js" ></script>
-<script src="js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery.min.js" ></script>
+<script src="/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/custom.css">
 

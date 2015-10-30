@@ -7,7 +7,7 @@
   <h3 class="loginText">Login</h3>
   <br><br>
   <div class="container center-block login vertical-centre">
-  <div>
+
   {{ Form::open(array('class'=>'form-horizontal')) }}
           {{ $errors->first("username") }}
             <br>
@@ -19,8 +19,6 @@
                 {{--<span class="input-group-addon"><i class="glyphicon glyphicon-log-in"></i></span>--}}
                 <br><br>
        {{ Form::submit("Sign in",array('class'=>'btn btn-default loginBtn')) }}
-  </div>
-
   </div>
 
 </div>

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header " >
-        <a class="navbar-brand" href="/#"><span class="glyphicon glyphicon-home	"></span></a>
+        <a class="navbar-brand" href="/index.php"><span class="glyphicon glyphicon-home	"></span></a>
     </div>
     <div>
       <ul class="nav navbar-nav navbar-right">
