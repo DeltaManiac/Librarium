@@ -131,6 +131,9 @@ html{
     width:119px;
     height: 60px;
 }
+#Author{
+    color: #000100;
+}
 .btn-file {
     position: relative;
     overflow: hidden;
