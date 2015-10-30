@@ -18,7 +18,7 @@
         {{ Form::password("password",array('class'=>'form-control text-center','placeholder'=>'password')) }}
                 {{--<span class="input-group-addon"><i class="glyphicon glyphicon-log-in"></i></span>--}}
                 <br><br>
-       {{ Form::submit("Sign in",array('class'=>'btn btn-default loginBtn')) }}
+       {{ Form::submit("Log in",array('class'=>'btn btn-default loginBtn')) }}
   </div>
 
 </div>
