@@ -16,23 +16,36 @@
 
 <div class="container-fluid bg-2 text-center">
   <h3>What Am I?</h3>
-  <p>Lorem ipsum..</p>
+  <br><br>
+
+<p> Librarium is the apex body of the library system in India. Serving as a public library, it is a permanent repository of all documents published in India.</p>
+
+<p>Librarium has a collection of rare documents.</p>
+
+<p>Librarium has elaborate arrangements for physical conservation of books for posterity.</p>
+
+<p>The website contains bibliographic information of a portion of the Librarium's holding with limited fields for ready access by users.</p>
+
+<p>Arrangements have been made for registered users to view digitized books.</p>
+
+
 </div>
 
 <div class="container-fluid bg-3 text-center">
-  <h3>Where To Find Me?</h3>
+  <h3>Top Books</h3>
+  <br>
 <div class="row">
     <div class="col-sm-4">
-      <p>Lorem ipsum..</p>
-      <img src="img/c4.jpg" class="img-responsive" style="width:100%"  alt="Image">
-    </div>
-    <div class="col-sm-4"> t;
-      <p>Lorem ipsum..</p>
-      <img src="img/c2.jpg" class="img-responsive" style="width:100%"  alt="Image">
+      <p>Code Reading</p>
+      <img src="img/c4.jpg" class="img-responsive imageClip" style="width:100%"  alt="Image">
     </div>
     <div class="col-sm-4">
-      <p>Lorem ipsum..</p>
-      <img src="img/c3.jpg" class="img-responsive" style="width:100%"  alt="Image">
+      <p>Cloud Computing Networking</p>
+      <img src="img/c2.jpg" class="img-responsive imageClip" style="width:100%"  alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>Book of Clouds</p>
+      <img src="img/c3.jpg" class="img-responsive imageClip" style="width:100%"  alt="Image">
     </div>
 </div>
 
