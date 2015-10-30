@@ -20,7 +20,6 @@ class UserController
                     "password" => ["Credentials invalid."]
                 ]);
             } else {
-//                $data["error"] = "Username and/or password invalid.";
                 return Redirect::back()
                     ->withInput()
                     ->withErrors($validator);
@@ -29,6 +28,14 @@ class UserController
 
         return View::make("user.login");
     }
+
+    public function search(){
+        $name = Input::get('srch-term');
+        $book = DB::table('book')->where('bookName', 'like', $name)->get();
+        return View::make("user.searchResult",["books"=>$book]);
+    }
+
+
     public function profile()
     {
         $book = Book::all();

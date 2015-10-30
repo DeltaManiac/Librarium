@@ -89,7 +89,13 @@ class BookController extends BaseController {
      */
     public function edit($id)
     {
-        //
+        $book = Book::find($id);
+        $file= public_path(). "/download/".$book->fileName;
+
+        return Response::make(file_get_contents($file), 200, [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'inline; ' . $book->bookName,
+        ]);
     }
 
     /**

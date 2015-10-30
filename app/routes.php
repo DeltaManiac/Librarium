@@ -11,7 +11,7 @@
 |
 */
 
-
+Route::get('/downloadBooks','HomeController@getDownload');
 Route::any("/about", [
     "as"   => "user/login",
     "uses" => "UserController@login"
@@ -25,6 +25,18 @@ Route::get('/', function()
 
 	return View::make('pages.home');
 });
+
+Route::get('/view', function()
+{
+
+    return View::make('user.view');
+});
+Route::get('/search', [
+    "as" => "user/search",
+    "uses" => "UserController@search"
+]);
+
+
 
 Route::get('/about',function()
 {
@@ -44,6 +56,9 @@ Route::any("/profile", [
     "uses" => "UserController@profile",
     "before" => 'auth'
 ]);
+
+
+
 Route::any("/logout", [
     "as"   => "user.logout",
     "uses" => "UserController@logout"
@@ -84,8 +99,6 @@ Route::any("/test",function(){
 Route::get('/footer',function(){
     return View::make('includes.footer', ['squirrel' => 'Samantha', 'something' => 1]);
 });
-Route::get('/downloadBooks/{id}','HomeController@getDownload
 
-');
 
 Route::resource('book', 'BookController');
