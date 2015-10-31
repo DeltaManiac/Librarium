@@ -29,7 +29,7 @@
 
         <div class="form-group">
 
-    {{ Form::submit('Save',array('class'=>'btn btn-default loginBtn')) }}
+    {{ Form::submit('Save',array('class'=>'btn btn-default loginBtn','onclick'=>'ajaxindicatorstart("uploading...please wait")')) }}
 
         <!-- reset buttons -->
     {{ Form::reset('Reset',array('class'=>'btn btn-default loginBtn')) }}
