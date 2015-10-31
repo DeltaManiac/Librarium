@@ -67,8 +67,12 @@ class UserController
     {
         $book = Book::all();
        // $book = Book::where("bookName","=","HarryPotter6")->get();
+        if(count($book)>0){
+            return View::make("user.profile",["books"=>$book]);
+        }else{
+            return View::make("user.profile",["books"=>null]);
+        }
 
-        return View::make("user.profile",["books"=>$book]);
     }
     protected function isPostRequest()
     {

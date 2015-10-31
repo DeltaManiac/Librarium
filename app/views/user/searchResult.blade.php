@@ -30,7 +30,7 @@
                         @endif
                         <p><strong>{{$book->bookName}} written by {{ $book->author }}</strong></p>
                         <p><a href="{{ URL::to('book/'.$book->id) }}" class="btn btn-info btn-lg">
-                                <span class="glyphicon glyphicon-download-alt"></span> Download
+                                <span class="glyphicon glyphicon-cloud-download"></span> Download
                             </a></p>
                         <p><a href="{{ URL::to('book/'.$book->id.'/edit') }}" class="btn btn-info btn-lg">
                                 <span class="glyphicon glyphicon-eye-open"></span> Preview
