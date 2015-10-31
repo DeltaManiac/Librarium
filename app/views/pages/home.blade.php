@@ -37,7 +37,7 @@
 <div class="row">
     <div class="col-sm-4">
       <p>Cloud Computing Principles and Paradigms</p>
-      <img src="img/c4.jpg" style="width: 100%;height: 700px; padding: 12px 25px 12px 25px;" class="img-responsive imageClip"  alt="Image">
+      <img src="img/c5.jpg" style="width: 100%;height: 700px; padding: 12px 25px 12px 25px;" class="img-responsive imageClip"  alt="Image">
     </div>
     <div class="col-sm-4">
       <p>Object Oriented Analysis & Design</p>
