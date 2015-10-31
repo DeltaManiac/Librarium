@@ -36,16 +36,16 @@
   <br>
 <div class="row">
     <div class="col-sm-4">
-      <p>Code Reading</p>
-      <img src="img/c4.jpg" class="img-responsive imageClip" style="width:100%"  alt="Image">
+      <p>Cloud Computing Principles and Paradigms</p>
+      <img src="img/c4.jpg" style="width: 100%;height: 700px; padding: 12px 25px 12px 25px;" class="img-responsive imageClip"  alt="Image">
     </div>
     <div class="col-sm-4">
-      <p>Cloud Computing Networking</p>
-      <img src="img/c2.jpg" class="img-responsive imageClip" style="width:100%"  alt="Image">
+      <p>Object Oriented Analysis & Design</p>
+      <img src="img/c2.png" class="img-responsive imageClip" style="width: 100%;height: 700px; padding: 12px 25px 12px 25px;" alt="Image">
     </div>
     <div class="col-sm-4">
-      <p>Book of Clouds</p>
-      <img src="img/c3.jpg" class="img-responsive imageClip" style="width:100%"  alt="Image">
+      <p>The Complete Reference JAVA</p>
+      <img src="img/c3.png" class="img-responsive imageClip" style="width: 100%;height: 700px; padding: 12px 25px 12px 25px;" alt="Image">
     </div>
 </div>
 
