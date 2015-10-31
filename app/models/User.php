@@ -63,4 +63,10 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     {
         return "remember_token";
     }
+	// model function to store form data to database
+	public static function saveFormData($data)
+	{
+
+		DB::table('user')->insert($data);
+	}
 }

@@ -29,6 +29,31 @@ class UserController
         return View::make("user.login");
     }
 
+    public function registration(){
+        if ($this->isPostRequest()) {
+            $data = Input::except(array('_token'));
+            $rule = array(
+                'username' => 'required|unique:user',
+                'email' => 'required|email|unique:user',
+                'password' => 'required|min:6|same:cpassword',
+                'cpassword' => 'required|min:6'
+            );
+
+            $validator = Validator::make($data, $rule);
+
+            if ($validator->fails()) {
+                return Redirect::back()
+                    ->withErrors($validator);
+            } else {
+                $data = Input::except(array('_token','cpassword'));
+                $data['password'] = Hash::make($data['password']);
+                User::saveFormData($data);
+                return Redirect::route("user.profile");
+            }
+        }
+        return View::make("user.registration");
+    }
+
     public function search(){
         $name = Input::get('srch-term');
         $book = DB::table('book')->where('bookName', 'like', "%".$name."%")

@@ -20,6 +20,12 @@ Route::any("/login", [
     "as"   => "user/login",
     "uses" => "UserController@login"
 ]);
+
+Route::any("/registration", [
+    "as"   => "user/registration",
+    "uses" => "UserController@registration"
+]);
+
 Route::get('/', function()
 {
 

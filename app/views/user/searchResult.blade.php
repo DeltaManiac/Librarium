@@ -12,9 +12,14 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+        #js-contact-message:after {
+            content: '\1F622';
+            color:white; /* yellow: not enough contrast with white background */
+        }
     </style>
     <div class="container-fluid text-center bg-1">
         <div class="row text-center tiles">
+            @if($books)
             @foreach($books as $book)
                 <div class="col-sm-4">
                     <div class="thumbnail">
@@ -33,7 +38,15 @@
                     </div>
                 </div>
             @endforeach
-
+            @else
+                <br>
+            <br>
+            <br>
+            <br>
+            <br>
+                <h4  class="loginText text-center">Ooops.. No Books Found</h4>
+                <h4 id="js-contact-message"  class="loginText text-center"></h4>
+            @endif
         </div>
 
     </div>
