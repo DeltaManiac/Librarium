@@ -26,7 +26,7 @@
                         @if($book->image)
                             <img src="/download/{{ $book->image }}">
                         @else
-                            <img src="img/newyork.jpg"/>
+                            <img src="http://librarium.mo.sap.corp:1080/img/default.jpg"/>
                         @endif
                         <p><strong>{{$book->bookName}} written by {{ $book->author }}</strong></p>
                         <p><a href="{{ URL::to('book/'.$book->id) }}" class="btn btn-info btn-lg">
