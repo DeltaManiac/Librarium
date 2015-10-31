@@ -24,7 +24,7 @@
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         @if($book->image)
-                            <img src="/download/{{ $book->image }}">
+                            <img style="width: 100%;height: 650px; padding: 12px 25px 12px 25px;" src="/download/{{ $book->image }}">
                         @else
                             <img src="http://librarium.mo.sap.corp:1080/img/default.jpg"/>
                         @endif
